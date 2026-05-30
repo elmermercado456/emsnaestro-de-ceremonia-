@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sitio web oficial de Elmer Mercado Salvatierra, Maestro de Ceremonias. Conducción elegante, protocolar y carismática para bodas, galas corporativas y eventos de gala.">
+  <title>Elmer Mercado | Maestro de Ceremonias</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons para estética premium -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Estilos Personalizados -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Barra de Navegación -->
+  <header id="main-header" class="header-nav">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo-link" id="nav-logo-anchor">
+        <div class="nav-logo-wrapper">
+          <img src="assets/logo.jpg" alt="Elmer Mercado Logo" class="nav-logo-img">
+        </div>
+        <span class="nav-logo-text">ELMER MERCADO</span>
+      </a>
+      
+      <!-- Menú Desktop -->
+      <nav class="nav-menu" id="desktop-menu">
+        <a href="#about" class="nav-link">Sobre Mí</a>
+        <a href="#services" class="nav-link">Servicios</a>
+        <a href="#gallery" class="nav-link">Galería</a>
+        <a href="#testimonials" class="nav-link">Testimonios</a>
+        <a href="https://wa.me/51976966667?text=Hola%20Elmer,%20quisiera%20consultar%20disponibilidad%20para%20un%20evento." target="_blank" rel="noopener noreferrer" class="nav-btn">Reservar Fecha</a>
+      </nav>
+
+      <!-- Botón Menú Móvil -->
+      <button class="mobile-menu-toggle" id="menu-toggle" aria-label="Abrir menú de navegación">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Menú Móvil Desplegable -->
+  <div class="mobile-menu" id="mobile-menu-dropdown">
+    <a href="#about" class="mobile-nav-link">Sobre Mí</a>
+    <a href="#services" class="mobile-nav-link">Servicios</a>
+    <a href="#gallery" class="mobile-nav-link">Galería</a>
+    <a href="#testimonials" class="mobile-nav-link">Testimonios</a>
+    <a href="https://wa.me/51976966667?text=Hola%20Elmer,%20quisiera%20consultar%20disponibilidad%20para%20un%20evento." target="_blank" rel="noopener noreferrer" class="mobile-nav-btn">Reservar Fecha</a>
+  </div>
+
+  <main>
+    <!-- Sección Hero (Bienvenida) -->
+    <section id="hero" class="hero-section">
+      <div class="hero-bg-overlay"></div>
+      <div class="hero-content">
+        <!-- Logotipo Grande y Central -->
+        <div class="hero-logo-container" id="hero-logo-box">
+          <img src="assets/logo.jpg" alt="Elmer Mercado Salvatierra Logo" class="hero-logo-large">
+        </div>
+        <h1 class="hero-title">Elmer Mercado</h1>
+        <p class="hero-subtitle">Maestro de Ceremonias</p>
+        <p class="hero-tagline">La voz que conecta. El estilo que marca. La distinción y elocuencia que tu evento merece.</p>
+        <div class="hero-actions">
+          <a href="https://wa.me/51976966667?text=Hola%20Elmer,%20quisiera%20consultar%20disponibilidad%20para%20un%20evento." target="_blank" rel="noopener noreferrer" class="btn-primary" id="hero-cta-booking">Reservar Ahora</a>
+          <a href="#about" class="btn-secondary" id="hero-cta-more">Conoce mi Trayectoria</a>
+        </div>
+      </div>
+      <a href="#about" class="scroll-down-arrow" aria-label="Desplazarse hacia abajo">
+        <span class="arrow-dot"></span>
+        <i class="fa-solid fa-chevron-down"></i>
+      </a>
+    </section>
+
+    <!-- Sección Sobre Mí (Biografía) -->
+    <section id="about" class="section-padding about-section">
+      <div class="container">
+        <div class="grid-2-cols align-center">
+          <div class="about-image-wrapper">
+            <div class="about-image-frame">
+              <img src="assets/images/master_ceremony.png" alt="Elmer Mercado conduciendo un evento" class="about-img">
+            </div>
+            <!-- Medallón flotante de calidad -->
+            <div class="about-badge">
+              <span class="badge-number">10+</span>
+              <span class="badge-text">Años de Elegancia</span>
+            </div>
+          </div>
+          
+          <div class="about-text-content">
+            <span class="section-subtitle">Pasión por la Excelencia</span>
+            <h2 class="section-title">El Arte de Conducir Momentos Inolvidables</h2>
+            <div class="section-divider"></div>
+            
+            <p class="about-paragraph text-highlight">
+              Cada evento es una historia única que merece ser narrada con elocuencia, solemnidad y la dosis perfecta de carisma.
+            </p>
+            <p class="about-paragraph">
+              Mi nombre es <strong>Elmer Mercado Salvatierra</strong>, profesional dedicado a la conducción y maestría de ceremonias de alta gama. Me especializo en dar estructura, fluidez y una atmósfera refinada a momentos trascendentales de la vida, desde bodas de ensueño hasta galas corporativas y actos protocolares de Estado.
+            </p>
+            <p class="about-paragraph">
+              Mi compromiso va más allá de tomar el micrófono; es coordinar meticulosamente el ritmo del evento junto a los organizadores para que cada pieza encaje a la perfección, logrando que los anfitriones disfruten plenamente mientras sus invitados se sienten cautivados.
+            </p>
+            
+            <div class="about-features">
+              <div class="about-feature-item">
+                <i class="fa-solid fa-microphone-lines feature-icon"></i>
+                <div>
+                  <h4>Voz e Impostación Profesional</h4>
+                  <p>Dicción impecable y control escénico absoluto.</p>
+                </div>
+              </div>
+              <div class="about-feature-item">
+                <i class="fa-solid fa-scroll feature-icon"></i>
+                <div>
+                  <h4>Protocolo y Etiqueta</h4>
+                  <p>Manejo estricto de protocolos oficiales, corporativos y sociales.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Servicios -->
+    <section id="services" class="section-padding services-section dark-bg">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle gold-text">Servicios Exclusivos</span>
+          <h2 class="section-title white-text">Conducción a la Medida de tus Sueños</h2>
+          <div class="section-divider center-divider"></div>
+        </div>
+
+        <div class="grid-3-cols">
+          <!-- Servicio 1: Bodas -->
+          <article class="service-card" id="service-wedding">
+            <div class="service-img-container">
+              <img src="assets/images/wedding_ceremony.png" alt="Bodas de Ensueño" class="service-card-img">
+              <div class="service-card-overlay"></div>
+            </div>
+            <div class="service-card-body">
+              <span class="service-number">01</span>
+              <h3 class="service-card-title">Bodas de Ensueño</h3>
+              <p class="service-card-text">
+                Una ceremonia matrimonial requiere romanticismo, respeto y perfecta sincronización. Conduzco la ceremonia civil, el brindis y la recepción con un tono emotivo y distinguido.
+              </p>
+              <ul class="service-list">
+                <li><i class="fa-solid fa-circle-check"></i> Ceremonia Civil y Simbólica</li>
+                <li><i class="fa-solid fa-circle-check"></i> Protocolo de Brindis e Ingreso</li>
+                <li><i class="fa-solid fa-circle-check"></i> Coordinación en tiempo real</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Servicio 2: Corporativo -->
+          <article class="service-card" id="service-corporate">
+            <div class="service-img-container">
+              <img src="assets/images/corporate_service.jpg" alt="Galas Corporativas" class="service-card-img">
+              <div class="service-card-overlay"></div>
+            </div>
+            <div class="service-card-body">
+              <span class="service-number">02</span>
+              <h3 class="service-card-title">Galas & Eventos Corporativos</h3>
+              <p class="service-card-text">
+                Lanzamientos de marca, congresos, aniversarios empresariales o premiaciones de gala. Brindo una conducción formal y dinámica que refuerza el prestigio de su empresa.
+              </p>
+              <ul class="service-list">
+                <li><i class="fa-solid fa-circle-check"></i> Lanzamientos y Conferencias</li>
+                <li><i class="fa-solid fa-circle-check"></i> Ceremonias de Premiación</li>
+                <li><i class="fa-solid fa-circle-check"></i> Conducción Bilingüe de ser requerida</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Servicio 3: Galas y Protocolo -->
+          <article class="service-card" id="service-social">
+            <div class="service-img-container">
+              <img src="assets/images/master_ceremony.png" alt="Protocolo y Galas" class="service-card-img" style="filter: hue-rotate(45deg);">
+              <div class="service-card-overlay"></div>
+            </div>
+            <div class="service-card-body">
+              <span class="service-number">03</span>
+              <h3 class="service-card-title">Protocolo & Eventos Sociales</h3>
+              <p class="service-card-text">
+                Quinceañeros, aniversarios, graduaciones y eventos oficiales de alto perfil. Adaptación del tono protocolar y las formalidades según las exigencias de cada celebración.
+              </p>
+              <ul class="service-list">
+                <li><i class="fa-solid fa-circle-check"></i> Fiestas de Quince Años Premium</li>
+                <li><i class="fa-solid fa-circle-check"></i> Ceremonias de Graduación</li>
+                <li><i class="fa-solid fa-circle-check"></i> Actos Solemnes y Oficiales</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Galería -->
+    <section id="gallery" class="section-padding gallery-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle">Portafolio Visual</span>
+          <h2 class="section-title">La Estética de un Evento Perfecto</h2>
+          <div class="section-divider center-divider"></div>
+        </div>
+
+        <div class="gallery-grid" id="gallery-masonry">
+          <div class="gallery-item" id="gallery-item-1">
+            <img src="assets/images/master_ceremony.png" alt="Elmer en acción" class="gallery-img">
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-info">
+                <span>Conducción Escénica</span>
+                <h4>Elocuencia en el Escenario</h4>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-item" id="gallery-item-2">
+            <img src="assets/images/wedding_ceremony.png" alt="Boda elegante" class="gallery-img">
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-info">
+                <span>Bodas Exclusivas</span>
+                <h4>Ceremonias con Alma</h4>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-item" id="gallery-item-3">
+            <img src="assets/images/corporate_service.jpg" alt="Gala nocturna" class="gallery-img">
+            <div class="gallery-item-overlay">
+              <div class="gallery-item-info">
+                <span>Galas Corporativas</span>
+                <h4>Brillo e Impacto Empresarial</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Testimonios -->
+    <section id="testimonials" class="section-padding testimonials-section dark-bg">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle gold-text">Opiniones de Clientes</span>
+          <h2 class="section-title white-text">Historias de Éxito en sus Palabras</h2>
+          <div class="section-divider center-divider"></div>
+        </div>
+
+        <div class="testimonials-slider-container">
+          <div class="testimonial-slider" id="testimonial-carousel">
+            <!-- Testimonio 1 -->
+            <div class="testimonial-slide active">
+              <div class="testimonial-rating">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+              <p class="testimonial-quote">
+                "Contratar a Elmer para nuestra boda fue la mejor decisión. Logró capturar perfectamente la esencia de nuestra historia y la transmitió a los invitados de una forma tan emotiva que a muchos se les aguaron los ojos. Su elegancia y organización en la recepción hicieron que todo fluyera de maravilla."
+              </p>
+              <div class="testimonial-author">
+                <div class="author-info">
+                  <h4 class="author-name">Clara y Mateo</h4>
+                  <span class="author-title">Novios de Boda Realizada en Marriott</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonio 2 -->
+            <div class="testimonial-slide">
+              <div class="testimonial-rating">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+              <p class="testimonial-quote">
+                "Una presencia escénica y un tono de voz inigualable. Para nuestra gala de premiación anual corporativa necesitábamos a alguien que representara la sofisticación de la marca, y Elmer superó todas las expectativas. Puntual, profesional y sumamente coordinado con el staff técnico."
+              </p>
+              <div class="testimonial-author">
+                <div class="author-info">
+                  <h4 class="author-name">Diana Valenzuela</h4>
+                  <span class="author-title">Gerente de Marketing - InovaTech Corp</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonio 3 -->
+            <div class="testimonial-slide">
+              <div class="testimonial-rating">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+              <p class="testimonial-quote">
+                "Excelente maestro de ceremonias. Su dominio del protocolo social en el quinceañero de mi hija fue de primer nivel. Hizo que los jóvenes prestaran atención en los momentos clave y mantuvo a los adultos entretenidos con gran dinamismo y respeto."
+              </p>
+              <div class="testimonial-author">
+                <div class="author-info">
+                  <h4 class="author-name">Héctor Salvatierra</h4>
+                  <span class="author-title">Padre de Familia</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Controles del Slider -->
+          <div class="slider-controls">
+            <button class="slider-btn prev-btn" id="testimonial-prev" aria-label="Testimonio anterior">
+              <i class="fa-solid fa-arrow-left"></i>
+            </button>
+            <div class="slider-dots" id="testimonial-dots">
+              <span class="dot active" data-index="0"></span>
+              <span class="dot" data-index="1"></span>
+              <span class="dot" data-index="2"></span>
+            </div>
+            <button class="slider-btn next-btn" id="testimonial-next" aria-label="Siguiente testimonio">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Contacto y Reservas -->
+    <section id="contact" class="section-padding contact-section">
+      <div class="container">
+        <div class="grid-2-cols gap-large">
+          <div class="contact-info-column">
+            <span class="section-subtitle">Reserva Tu Fecha</span>
+            <h2 class="section-title">Comencemos a Planificar tu Gran Evento</h2>
+            <div class="section-divider"></div>
+            
+            <p class="contact-description">
+              Las fechas para temporadas de eventos suelen reservarse con bastante anticipación. Ponte en contacto hoy mismo para verificar disponibilidad, agendar una reunión y empezar a trazar la pauta de tu ceremonia.
+            </p>
+            
+            <div class="contact-details-list">
+              <div class="contact-detail-card">
+                <div class="detail-icon-box">
+                  <i class="fa-brands fa-instagram"></i>
+                </div>
+                <div class="detail-text-box">
+                  <h4>Instagram</h4>
+                  <a href="https://www.instagram.com/elmer_mercado_salvatierra?igsh=MXF2cXo0ejNkNzdraA==" target="_blank" rel="noopener noreferrer" class="detail-link">@elmer_mercado_salvatierra</a>
+                </div>
+              </div>
+
+              <div class="contact-detail-card">
+                <div class="detail-icon-box">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </div>
+                <div class="detail-text-box">
+                  <h4>WhatsApp Directo</h4>
+                  <a href="https://wa.me/51976966667?text=Hola%20Elmer,%20quisiera%20consultar%20disponibilidad%20para%20un%20evento." target="_blank" rel="noopener noreferrer" class="detail-link">+51 976 966 667</a>
+                </div>
+              </div>
+
+              <div class="contact-detail-card">
+                <div class="detail-icon-box">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="detail-text-box">
+                  <h4>Correo Electrónico</h4>
+                  <a href="mailto:emssergen@gmail.com" class="detail-link">emssergen@gmail.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="contact-form-column">
+            <div class="form-container">
+              <h3 class="form-title">Formulario de Consulta</h3>
+              <p class="form-subtitle">Completa los campos para recibir una cotización detallada.</p>
+              
+              <form id="booking-form" class="booking-form-element">
+                <div class="form-group">
+                  <label for="form-name">Nombre Completo *</label>
+                  <div class="input-wrapper">
+                    <i class="fa-solid fa-user input-icon"></i>
+                    <input type="text" id="form-name" name="name" placeholder="Ej. Juan Pérez" required>
+                  </div>
+                </div>
+
+                <div class="grid-2-cols gap-small">
+                  <div class="form-group">
+                    <label for="form-email">Correo Electrónico *</label>
+                    <div class="input-wrapper">
+                      <i class="fa-solid fa-envelope input-icon"></i>
+                      <input type="email" id="form-email" name="email" placeholder="Ej. juan@correo.com" required>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="form-phone">Teléfono / WhatsApp</label>
+                    <div class="input-wrapper">
+                      <i class="fa-solid fa-phone input-icon"></i>
+                      <input type="tel" id="form-phone" name="phone" placeholder="Ej. +51 999 999 999">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="grid-2-cols gap-small">
+                  <div class="form-group">
+                    <label for="form-date">Fecha del Evento</label>
+                    <div class="input-wrapper">
+                      <i class="fa-solid fa-calendar-days input-icon"></i>
+                      <input type="date" id="form-date" name="date">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="form-event-type">Tipo de Evento</label>
+                    <div class="input-wrapper">
+                      <i class="fa-solid fa-star input-icon"></i>
+                      <select id="form-event-type" name="eventType">
+                        <option value="">Selecciona una opción</option>
+                        <option value="boda">Boda de Ensueño</option>
+                        <option value="corporativo">Gala Corporativa</option>
+                        <option value="social">Graduación / Quinceañero</option>
+                        <option value="protocolo">Acto Oficial / Protocolar</option>
+                        <option value="otro">Otro tipo de evento</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="form-message">Cuéntame sobre tu evento *</label>
+                  <div class="input-wrapper text-area-wrapper">
+                    <i class="fa-solid fa-comment input-icon-textarea"></i>
+                    <textarea id="form-message" name="message" rows="4" placeholder="Describe los detalles de la ceremonia, horario estimado, lugar..." required></textarea>
+                  </div>
+                </div>
+
+                <button type="submit" id="form-submit-btn" class="form-btn">
+                  <span>Enviar Solicitud de Reserva</span>
+                  <i class="fa-solid fa-paper-plane"></i>
+                </button>
+              </form>
+
+              <!-- Estados de Respuesta del Formulario -->
+              <div id="form-status-message" class="form-status-box hidden">
+                <i class="fa-solid fa-circle-info status-icon"></i>
+                <p id="status-text">Mensaje de prueba.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Pie de Página -->
+  <footer class="main-footer">
+    <div class="container text-center">
+      <div class="footer-logo-wrapper">
+        <img src="assets/logo.jpg" alt="Elmer Mercado Salvatierra Logo" class="footer-logo-img">
+      </div>
+      <h3 class="footer-title">Elmer Mercado Salvatierra</h3>
+      <p class="footer-subtitle">Maestro de Ceremonias</p>
+      
+      <div class="footer-social-links">
+        <a href="https://www.instagram.com/elmer_mercado_salvatierra?igsh=MXF2cXo0ejNkNzdraA==" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="Instagram de Elmer">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://wa.me/51976966667" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="WhatsApp de Elmer">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <a href="mailto:emssergen@gmail.com" class="social-icon-link" aria-label="Correo de Elmer">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+      </div>
+      
+      <div class="footer-divider"></div>
+      
+      <p class="footer-copyright">
+        &copy; 2026 Elmer Mercado Salvatierra. Todos los derechos reservados. | Diseñado con distinción y minimalismo.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Lógica Dinámica en JS -->
+  <script src="js/main.js"></script>
+</body>
+</html>

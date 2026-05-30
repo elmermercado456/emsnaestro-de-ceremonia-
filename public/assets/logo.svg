@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <!-- Cargar Google Fonts de manera elegante -->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Alex+Brush&amp;family=Montserrat:wght@400;500;600&amp;display=swap');
+      
+      .logo-ring {
+        fill: none;
+        stroke: #1c1c1e;
+        stroke-width: 48;
+      }
+      .logo-text-top {
+        font-family: 'Alex Brush', 'Playfair Display', cursive;
+        font-size: 38px;
+        fill: #ffffff;
+        text-anchor: middle;
+      }
+      .logo-text-bottom {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: 26px;
+        fill: #ffffff;
+        letter-spacing: 1px;
+        text-anchor: middle;
+      }
+      .logo-bowtie {
+        fill: #1c1c1e;
+        filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.15));
+      }
+      .logo-bowtie-detail {
+        stroke: #ffffff;
+        stroke-width: 4.5;
+        stroke-linecap: round;
+        fill: none;
+        opacity: 0.85;
+      }
+      .logo-gap {
+        fill: #ffffff;
+      }
+    </style>
+    
+    <!-- Caminos para el texto curvo -->
+    <!-- Camino superior (sentido horario, radio 200, centrado en 250,250) -->
+    <path id="textPathTop" d="M 68,250 A 182,182 0 0,1 432,250" />
+    
+    <!-- Camino inferior (sentido antihorario, radio 218 para compensar altura del texto y mantener alineación) -->
+    <path id="textPathBottom" d="M 70,250 A 180,180 0 0,0 430,250" />
+  </defs>
+
+  <!-- Círculo interior blanco (fondo del logo) -->
+  <circle cx="250" cy="250" r="230" fill="#ffffff" />
+
+  <!-- Anillo exterior negro principal -->
+  <circle cx="250" cy="250" r="200" class="logo-ring" />
+
+  <!-- Texto Superior: Elmer Mercado Salvatierra -->
+  <text class="logo-text-top">
+    <textPath href="#textPathTop" startOffset="50%">Elmer Mercado Salvatierra</textPath>
+  </text>
+
+  <!-- Texto Inferior: Maestro de Ceremonia -->
+  <!-- Usamos dy="8" para posicionarlo adecuadamente dentro del anillo -->
+  <text class="logo-text-bottom" dy="-12">
+    <textPath href="#textPathBottom" startOffset="50%">Maestro de Ceremonias</textPath>
+  </text>
+
+  <!-- Moño de etiqueta central -->
+  <g>
+    <!-- Ala Izquierda -->
+    <path class="logo-bowtie" d="M 230,250 C 195,232 145,185 110,175 C 92,170 80,180 80,205 C 80,240 85,270 80,295 C 80,320 92,330 110,325 C 145,315 195,268 230,250 Z" />
+    
+    <!-- Ala Derecha -->
+    <path class="logo-bowtie" d="M 270,250 C 305,232 355,185 390,175 C 408,170 420,180 420,205 C 420,240 415,270 420,295 C 420,320 408,330 390,325 C 355,315 305,268 270,250 Z" />
+    
+    <!-- Nudo central -->
+    <path class="logo-bowtie" d="M 232,225 Q 250,220 268,225 Q 275,250 268,275 Q 250,280 232,275 Q 225,250 232,225 Z" />
+
+    <!-- Líneas de detalle/brillo blancas del ala izquierda -->
+    <path class="logo-bowtie-detail" d="M 125,218 C 150,228 175,242 205,246" />
+    <path class="logo-bowtie-detail" d="M 125,282 C 150,272 175,258 205,254" />
+
+    <!-- Líneas de detalle/brillo blancas del ala derecha -->
+    <path class="logo-bowtie-detail" d="M 375,218 C 350,228 325,242 295,246" />
+    <path class="logo-bowtie-detail" d="M 375,282 C 350,272 325,258 295,254" />
+  </g>
+
+  <!-- Cortes/Espacios en blanco laterales del anillo exterior (izquierda y derecha) -->
+  <rect x="18" y="228" width="28" height="44" class="logo-gap" rx="3" />
+  <rect x="454" y="228" width="28" height="44" class="logo-gap" rx="3" />
+</svg>
