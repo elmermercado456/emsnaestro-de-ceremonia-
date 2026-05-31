@@ -859,10 +859,10 @@ button {
   transition: var(--transition-smooth);
 }
 
-/* Ajuste para evitar que se corte el rostro del orador en el servicio y galería corporativa */
+/* Ajuste para evitar que se corte el rostro del orador en el servicio y galería corporativa - Más encuadrado */
 #service-corporate .service-card-img,
 #gallery-item-3 .gallery-img {
-  object-position: center 10%;
+  object-position: center 25%;
 }
 
 .gallery-item-overlay {
