@@ -1469,58 +1469,58 @@ button {
     margin-right: 10px;
   }
 
-  .desktop-menu {
+  #desktop-menu {
     display: flex !important;
     flex-direction: row !important;
     gap: 8px !important;
-    overflow-x: auto;
-    white-space: nowrap;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none; /* Firefox */
-    padding: 4px 0;
-    max-width: calc(100% - 150px); /* Ajustado para dar espacio al logo a la izquierda */
+    overflow-x: auto !important;
+    white-space: nowrap !important;
+    -webkit-overflow-scrolling: touch !important;
+    scrollbar-width: none !important; /* Firefox */
+    padding: 4px 0 !important;
+    max-width: calc(100% - 150px) !important; /* Ajustado para dar espacio al logo a la izquierda */
   }
 
-  .desktop-menu::-webkit-scrollbar {
-    display: none; /* Chrome/Safari */
+  #desktop-menu::-webkit-scrollbar {
+    display: none !important; /* Chrome/Safari */
   }
 
-  .desktop-menu .nav-link {
+  #desktop-menu .nav-link {
     font-size: 11px !important;
     padding: 6px 12px !important;
-    background: rgba(255, 255, 255, 0.08);
-    border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 0.08) !important;
+    border-radius: 20px !important;
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
     color: rgba(255, 255, 255, 0.9) !important;
-    flex-shrink: 0;
-    letter-spacing: 0.5px;
-    text-transform: capitalize; /* Hace que se vea más limpio y comercial */
+    flex-shrink: 0 !important;
+    letter-spacing: 0.5px !important;
+    text-transform: capitalize !important; /* Hace que se vea más limpio y comercial */
   }
 
-  .desktop-menu .nav-link::after {
-    display: none; /* Oculta la línea de hover de escritorio en móvil */
+  #desktop-menu .nav-link::after {
+    display: none !important; /* Oculta la línea de hover de escritorio en móvil */
   }
 
-  .desktop-menu .nav-link:hover,
-  .desktop-menu .nav-link:active {
-    background: var(--color-accent);
+  #desktop-menu .nav-link:hover,
+  #desktop-menu .nav-link:active {
+    background: var(--color-accent) !important;
     color: var(--color-primary) !important;
-    border-color: var(--color-accent);
+    border-color: var(--color-accent) !important;
   }
 
-  .desktop-menu .nav-btn {
+  #desktop-menu .nav-btn {
     font-size: 11px !important;
     padding: 6px 14px !important;
     background: var(--color-accent) !important;
     color: var(--color-primary) !important;
     border: 1px solid var(--color-accent) !important;
     border-radius: 20px !important;
-    flex-shrink: 0;
-    margin: 0;
-    text-transform: capitalize;
+    flex-shrink: 0 !important;
+    margin: 0 !important;
+    text-transform: capitalize !important;
   }
 
-  .desktop-menu .nav-btn:hover {
+  #desktop-menu .nav-btn:hover {
     background: var(--color-accent-hover) !important;
   }
 
