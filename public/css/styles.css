@@ -1455,42 +1455,105 @@ button {
     gap: 40px;
   }
   
-  /* Navegación Móvil */
-  .desktop-menu {
-    display: none;
-  }
-  
-  .mobile-menu-toggle {
+  /* Navegación Móvil - Menú Deslizable (Scroll Horizontal) */
+  .nav-container {
+    width: 95% !important;
     display: flex;
-    z-index: 1001;
+    justify-content: space-between;
+    align-items: center;
+    overflow: visible;
+  }
+
+  .nav-logo-link {
+    flex-shrink: 0;
+    margin-right: 10px;
+  }
+
+  .desktop-menu {
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 8px !important;
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; /* Firefox */
+    padding: 4px 0;
+    max-width: calc(100% - 150px); /* Ajustado para dar espacio al logo a la izquierda */
+  }
+
+  .desktop-menu::-webkit-scrollbar {
+    display: none; /* Chrome/Safari */
+  }
+
+  .desktop-menu .nav-link {
+    font-size: 11px !important;
+    padding: 6px 12px !important;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: rgba(255, 255, 255, 0.9) !important;
+    flex-shrink: 0;
+    letter-spacing: 0.5px;
+    text-transform: capitalize; /* Hace que se vea más limpio y comercial */
+  }
+
+  .desktop-menu .nav-link::after {
+    display: none; /* Oculta la línea de hover de escritorio en móvil */
+  }
+
+  .desktop-menu .nav-link:hover,
+  .desktop-menu .nav-link:active {
+    background: var(--color-accent);
+    color: var(--color-primary) !important;
+    border-color: var(--color-accent);
+  }
+
+  .desktop-menu .nav-btn {
+    font-size: 11px !important;
+    padding: 6px 14px !important;
+    background: var(--color-accent) !important;
+    color: var(--color-primary) !important;
+    border: 1px solid var(--color-accent) !important;
+    border-radius: 20px !important;
+    flex-shrink: 0;
+    margin: 0;
+    text-transform: capitalize;
+  }
+
+  .desktop-menu .nav-btn:hover {
+    background: var(--color-accent-hover) !important;
+  }
+
+  .mobile-menu-toggle {
+    display: none !important; /* Oculta el menú hamburguesa */
   }
   
   .header-nav {
-    padding: 12px 0;
+    padding: 10px 0;
   }
   
   .header-nav.scrolled {
-    padding: 8px 0;
-    background-color: rgba(18, 18, 18, 0.98); /* Fondo opaco seguro en móvil */
+    padding: 6px 0;
+    background-color: rgba(18, 18, 18, 0.98); /* Fondo opaco seguro */
   }
 
   .nav-logo-wrapper {
-    width: 40px !important;
-    height: 40px !important;
+    width: 38px !important;
+    height: 38px !important;
   }
   
   .header-nav.scrolled .nav-logo-wrapper {
-    width: 36px !important;
-    height: 36px !important;
+    width: 34px !important;
+    height: 34px !important;
   }
   
   .nav-logo-text {
-    font-size: 15px;
-    letter-spacing: 1px;
+    font-size: 14px;
+    letter-spacing: 0.5px;
   }
   
   .header-nav.scrolled .nav-logo-text {
-    font-size: 13px;
+    font-size: 12px;
   }
   
   /* Hero */
