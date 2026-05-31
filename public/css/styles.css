@@ -859,6 +859,12 @@ button {
   transition: var(--transition-smooth);
 }
 
+/* Ajuste para evitar que se corte el rostro del orador en el servicio y galería corporativa */
+#service-corporate .service-card-img,
+#gallery-item-3 .gallery-img {
+  object-position: center 10%;
+}
+
 .gallery-item-overlay {
   position: absolute;
   top: 0;
