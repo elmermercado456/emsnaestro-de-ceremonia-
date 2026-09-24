@@ -1690,3 +1690,121 @@ button {
     padding: 16px 20px;
   }
 }
+
+/* ==========================================================================
+   WIDGET WHATSAPP FLOTANTE PERSONALIZADO
+   ========================================================================== */
+.floating-whatsapp-widget {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  z-index: 1000;
+  text-decoration: none;
+  animation: float-widget 3s ease-in-out infinite;
+}
+.whatsapp-speech-bubble {
+  background-color: #25D366;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  position: relative;
+  opacity: 0;
+  transform: translateX(20px);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.whatsapp-speech-bubble::after {
+  content: '';
+  position: absolute;
+  right: -8px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-width: 8px 0 8px 10px;
+  border-style: solid;
+  border-color: transparent transparent transparent #25D366;
+}
+
+.floating-whatsapp-widget:hover .whatsapp-speech-bubble {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.whatsapp-icon-container {
+  width: 70px;
+  height: 70px;
+  background-color: transparent;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  animation: float-widget 3s ease-in-out infinite;
+}
+
+.pixar-mic {
+  overflow: visible;
+  width: 100%;
+  height: 100%;
+  animation: mic-idle 3s ease-in-out infinite alternate;
+}
+
+.mic-body {
+  transform-origin: center bottom;
+}
+
+.floating-whatsapp-widget:hover .whatsapp-icon-container {
+  transform: scale(1.15);
+}
+
+.floating-whatsapp-widget:hover .pixar-mic {
+  animation: mic-excited 1s cubic-bezier(0.28, 0.84, 0.42, 1) infinite alternate;
+}
+
+@keyframes float-widget {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+  100% { transform: translateY(0); }
+}
+
+@keyframes mic-idle {
+  0% { transform: rotate(-5deg) scale(1); }
+  100% { transform: rotate(5deg) scale(1.05); }
+}
+
+@keyframes mic-excited {
+  0% { transform: rotate(0deg) scale(1) translateY(0); }
+  25% { transform: rotate(15deg) scale(1.1) translateY(-3px); }
+  75% { transform: rotate(-15deg) scale(0.9) translateY(2px); }
+  100% { transform: rotate(0deg) scale(1.15) translateY(-5px); }
+}
+
+@keyframes show-hide-bubble-mobile {
+  0%, 15% { opacity: 1; transform: translateX(0); }
+  20%, 100% { opacity: 0; transform: translateX(20px); }
+}
+
+@media (max-width: 768px) {
+  .floating-whatsapp-widget {
+    bottom: 20px;
+    right: 20px;
+  }
+  
+  .whatsapp-icon-container {
+    width: 55px;
+    height: 55px;
+  }
+
+  .whatsapp-speech-bubble {
+    /* En móviles se muestra automáticamente cada 6 segundos por un ratito */
+    animation: show-hide-bubble-mobile 6s ease-in-out infinite;
+  }
+}
